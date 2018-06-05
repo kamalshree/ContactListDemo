@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContactListDemo</string>
+    <string name="firstname">FirstName</string>
+    <string name="_123_234_222">123-234-222</string>
+</resources>
