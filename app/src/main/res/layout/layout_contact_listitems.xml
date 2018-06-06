@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_constraintlayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/rl_constraintlayout"
     android:padding="15dp">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/im_image"
+     <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/im_image"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_marginBottom="15dp"
+          android:background="@drawable/circle"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.733" />
+
+    <TextView
+        android:id="@+id/tv_initial"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="15dp"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733" />
+        android:gravity="center"
+        android:text="J"
+        android:textColor="#FFF"
+        android:textSize="32sp"
+        />
 
     <TextView
         android:id="@+id/tv_name"
